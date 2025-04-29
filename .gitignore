@@ -1,0 +1,5 @@
+generated/*
+!generated/.gitkeep
+header/*
+!header/.gitkeep
+!header/*.template

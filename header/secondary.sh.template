@@ -1,0 +1,16 @@
+#!/bin/bash
+# セカンダリDNSサーバ（ラズパイ2）の設定スクリプト
+# DHCPサーバも同時に設定します
+
+# 事前作業: DDNS認証キーをプライマリサーバからコピー
+DDNS_KEY="??????"
+
+# 環境変数の設定
+DOMAIN="xxxx.xxx"
+PRIMARYIP="192.168.xx.xx"  # プライマリサーバのIPアドレス
+SECONDARYIP="192.168.xx.xx" # セカンダリサーバのIPアドレス
+VIP="192.168.xx.xx"         # 仮想IPアドレス
+NETWORK="192.168.xx.0"
+NETMASK="255.255.255.0"
+DNS_TTL="3600"
+DDNS_KEYNAME="ddns-key"

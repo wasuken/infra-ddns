@@ -1,0 +1,12 @@
+#!/bin/bash
+# プライマリDNSサーバ（ラズパイ1）の設定スクリプト
+
+# 環境変数の設定
+DOMAIN="xxxx.xxx"
+PRIMARYIP="192.168.x.y"  # プライマリサーバのIPアドレス
+SECONDARYIP="192.168.x.y" # セカンダリサーバのIPアドレス
+VIP="192.168.x.y"         # 仮想IPアドレス
+NETWORK="192.168.x.0"
+NETMASK="255.255.255.0"
+DNS_TTL="3600"
+DDNS_KEYNAME="ddns-key"
